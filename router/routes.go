@@ -10,7 +10,7 @@ func initializeRoutes(router *gin.Engine) {
 	// Initialize Handlers
 	handler.InitializeHandler()
 
-	// Group routes by version [v1], with prefix "/api/v1s"
+	// Group routes by version [v1], with prefix "/api/v1"
 	v1 := router.Group("/api/v1")
 	{
 		v1.GET("/todo", handler.GetTodoHandler)
